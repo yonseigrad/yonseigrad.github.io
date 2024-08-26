@@ -45,6 +45,13 @@
             margin: 0;
         }
 
+        .gallery-item video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid #ddd;
+        }
+        
         @media (max-width: 600px) {
             .gallery {
                 grid-template-columns: 1fr;
@@ -132,7 +139,16 @@
         <div class="gallery-item">
             <img src="ys11.jpg" alt="사진 2">
             <p> 보드게임 방에서 기념 사진을 찍는 영성이의 사진입니다.</p>
-        </div>        
+        </div>    
+        <div class="gallery-item">
+            <video controls>
+                <source src="ysvideo1.mp4" type="video/mp4">
+                <!-- 다른 브라우저 호환성을 위해 추가 가능한 형식 -->
+                <source src="ysvideo1.webm" type="video/webm">
+                동영상을 재생할 수 없습니다.
+            </video>
+            <p>의자를 들고 프로레슬러처럼 포즈를 취하는 영성이의 사진입니다.</p>
+        </div>
     </div>
 
     <!-- 중제목 추가 -->

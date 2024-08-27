@@ -23,6 +23,7 @@
             padding: 20px;
             max-width: 1200px;
             width: 100%;
+            box-sizing: border-box; /* Ensures padding is included in width */
         }
 
         .gallery-item {
@@ -31,6 +32,8 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             text-align: center;
+            padding: 10px; /* Added padding */
+            box-sizing: border-box; /* Ensures padding is included in width */
         }
 
         .gallery-item img {
@@ -63,6 +66,7 @@
             font-size: 24px;
             margin: 20px 0;
             color: #444;
+            text-align: center; /* Centered heading text */
         }
 
         /* 글상자 스타일 */
@@ -70,11 +74,13 @@
             background-color: #fff;
             border: 1px solid #ddd;
             padding: 20px;
-            margin: 20px 0;
+            margin: 20px 10px; /* Added horizontal margin */
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             max-width: 800px;
             width: 100%;
+            text-align: center; /* Centered text in the box */
+            box-sizing: border-box; /* Ensures padding is included in width */
         }
     </style>
 </head>
